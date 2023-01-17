@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/entry.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <title>Resume</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <h2 class="header-title">Резюме</h2>
+            <div class="header-dropdown">
+                <button onclick="myFunction()" class="dropbtn">Меню</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">Обо мне</a>
+                    <a href="#aducation">Образование</a>
+                    <a href="#facts">Интересные факты</a>
+                    <a href="#gallery">Галерея</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="main">
+        <div class="main_item-mainInformation">
+            <div class="main_item-mainInformation_text">
+                <h1 class="main_item-mainInformation_text_name">Валерия Смирнова</h1>
+                <p class="main_item-mainInformation_text_position">Frontend developer</p>
+            </div>
+            <div class="main_item-mainInformation_image">
+                <img src="./assets/images/avatar.jpg" class="mainInformation-img" />
+            </div>
+        </div>
+
+        <div class="main_item-container">
+            <div class="aboutMeInformation_container" id="about">
+                <h2 class="aboutMeInformation_title">Обо мне</h2>
+                <p class="aboutMeInformation_text">
+                    Возраст: 24 года
+                </p>
+                <p class="aboutMeInformation_text">
+                    +375 (29) 321-26-80
+                </p>
+                <a class="aboutMeInformation_text" href="mailto:lera.smirnova.flok@gmail.com">
+                    lera.smirnova.flok@gmail.com
+                </a>
+            </div>
+            <div class="aducationInformation_container" id="aducation">
+                <h2 class="aducationInformation_title">Образование</h2>
+                <div class="aducationInformation_text">
+                    <p>2016-2022</p>
+                    <div class="aducationInformation_wrap">
+                        <p>Белорусский государственный университет информатики и радиоэлектроники</p>
+                        <p>Факультет: компьютерного проектирования</p>
+                        <p>Специальность: инженер-электроник-программист</p>
+                        <p>Первая степень: медицинская электроника</p>
+                        <p>Вторая степень: электронные системы и технологии (медицинские электронные системы)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="factsInformation_container" id="facts">
+            <h2 class="factsInformation_title">Интересные факты</h2>
+            <div class="factsInformation_textContainer">
+                <p class="factsInformation_text">Начала ходить и танцевать примерно в одно время</p>
+                <p class="factsInformation_text">В два года решила уйти из дома</p>
+                <p class="factsInformation_text">Танцую 20 лет</p>
+                <p class="factsInformation_text">Засыпая, придумываю решение задачи</p>
+                <p class="factsInformation_text">Уже в детстве перестала пить молоко</p>
+                <p class="factsInformation_text">Простояла в планке 30 минут и это явно не предел</p>
+                <p class="factsInformation_text">Согрела всех друзей, ой, связала для них шапочки, носочи и пр.</p>
+                <p class="factsInformation_text">Вырастила помидоры на подоконнике</p>
+            </div>
+        </div>
+
+        <div class="gallery_container" id="gallery">
+            <div class="wrapper-slider">
+                <div class="slider">
+                    <div class="slider-line">
+                        <img src="./assets/images/slider/0082.jpg" alt="photo" class="slider-img">
+                        <img src="./assets/images/slider/0101.jpg" alt="photo" class="slider-img">
+                        <img src="./assets/images/slider/0258.jpg" alt="photo" class="slider-img">
+                        <img src="./assets/images/slider/0264.jpg" alt="photo" class="slider-img">
+                        <img src="./assets/images/slider/0345.jpg" alt="photo" class="slider-img">
+                    </div>
+                    <button class="button slider-prev"></button>
+                    <button class="button slider-next"></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer_title">Контактная информация</h2>
+        <div class="footer_wrapper">
+            <a target="_blank" href="https://www.linkedin.com/in/valeria-smirnova-183a59241/"
+                class="footer_link-linkedIn"></a>
+            <a target="_blank" href="https://t.me/lerasmrnv" class="footer_link-telegram"></a>
+            <a target="_blank" href="https://www.instagram.com/lerasmrnv/" class="footer_link-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="dropdown.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+@media screen and (max-width: 400px) {
+    .main_item-mainInformation_text_name,
+    .aboutMeInformation_title,
+    .aducationInformation_title,
+    .factsInformation_title {
+        font-weight: 380;
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .aboutMeInformation_title,
+    .aducationInformation_title,
+    .factsInformation_title {
+        border-bottom: 2px solid #faec26c0;
+
+    }
+
+    .aducationInformation_text,
+    .aboutMeInformation_container,
+    .aducationInformation_container,
+    .factsInformation_textContainer {
+        gap: 10px;
+    }
+
+    .main_item-mainInformation {
+        justify-content: space-between;
+    }
+
+    .mainInformation-img {
+        max-height: 270px;
+    }
+
+    .factsInformation_text {
+        margin: 10px auto;
+        padding: 6px;
+
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .main_item-mainInformation_text_name,
+    .aboutMeInformation_title,
+    .aducationInformation_title,
+    .factsInformation_title {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .aducationInformation_text,
+    .aboutMeInformation_container,
+    .aducationInformation_container,
+    .factsInformation_textContainer {
+        gap: 20px;
+    }
+    .main_item-mainInformation_text {
+        margin-right: 10px;
+        border-top: 7px solid #faec26c0;
+        border-bottom: 7px solid #faec26c0;
+    }
+    .main_item-mainInformation {
+        justify-content: space-around;
+    }
+
+    .mainInformation-img {
+        max-height: 500px;
+    }
+    .factsInformation_text {
+        margin: 15px auto;
+        padding: 10px;
+
+        font-weight: 350;
+    }
+}
+
+.main_item-mainInformation,
+.main_item-mainInformation_image,
+.main_item-container,
+.aboutMeInformation_container,
+.aducationInformation_container,
+.aducationInformation_text,
+.aducationInformation_wrap,
+.factsInformation_text,
+.factsInformation_textContainer {
+    display: flex;
+}
+
+.main_item-container,
+.main_item-mainInformation_text,
+.factsInformation_container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main_item-mainInformation {
+    flex-direction: row;
+    align-items: center;
+    
+    max-width: 80vw;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.main_item-mainInformation_image {
+    justify-content: end;
+}
+
+
+
+.main_item-mainInformation_text_name {
+    margin-bottom: 10px;
+}
+
+.main_item-mainInformation_text_position {
+    font-weight: 250;
+    font-size: calc(12px + 4 * (100vw - 320px) / 1000);
+}
+
+.main_item-container {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    background-color: #ecececaf;
+}
+
+.aboutMeInformation_container,
+.aducationInformation_container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 80vw;
+}
+
+.aboutMeInformation_text,
+.aducationInformation_text {
+    font-weight: 250;
+    font-size: calc(12px + 4 * (100vw - 320px) / 1000);
+}
+
+.aducationInformation_wrap {
+    flex-direction: column;
+    gap: 7px;
+}
+
+.factsInformation_container {
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.factsInformation_title {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.factsInformation_textContainer {
+    flex-wrap: wrap;
+}
+
+.factsInformation_text {
+    justify-content: center;
+    align-items: center;
+
+    max-width: 20%;
+    min-width: 100px;
+    width: 100%;
+    min-height: 100px;
+
+    background-color: #faec26c0;
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: calc(12px + 4 * (100vw - 320px) / 1000);
+}
+
+.factsInformation_text:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+.gallery_container {
+    background-color: #ecececaf;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.wrapper-slider {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+    margin-bottom: 10px;
+}
+
+.button {
+    border: none;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+}
+
+.slider-next {
+    background-image: url('../images/slider/next.png');
+}
+.slider-next:active {
+    background-image: url('../images/slider/nextActive.png');
+}
+.slider-next:hover,
+.slider-prev:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    
+}
+.slider-prev {
+    background-image: url('../images/slider/prev.png');
+}
+.slider-prev:active {
+    background-image: url('../images/slider/prevActive.png');
+}
